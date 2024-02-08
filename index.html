@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarih Fener</title>
+    <link rel="stylesheet" href="still1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="container">
+            <header><img src="res/HEADER.png" alt="" id="anares"></header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li> <a href="hakkında.html"> Hakkında</a></li>
+                    <li id="kadro"><a href="kadrolar.html">Kadrolar</a>
+                    <ul>
+                        <li ><a href="gunumuzkadro.html" class="ortak">Güncel Kadro</a></li>
+                     <li ><a href="prime.html" class="ortak">Prime Kadro</a></li>
+                    </ul>
+                    <li><a href="kurulus.html">Kuruluş</a></li>
+                    <li><a href="baskanlar.html">Geçmişten Günümüze Başkanlar</a></li>
+                    <li><a href="efsaneler.html">Efsaneler</a></li>
+                </ul>
+            </nav>
+            <section>
+                <aside id="sol">
+                 <a href="prime.html">  <img src="res/Ghost Rider.jpg" alt=""></a>
+                </aside>
+               
+                <aside id="sag">
+                 <a href="gunumuzkadro.html"> <img src="res/szymanski.jpg" alt=""></a>
+                </aside>
+            </section>
+            <article>
+                <ul id="slideshow">
+                    <li>
+                        <h3>İTALYAN DEVİ BONUCCİ</h3>
+                        <span>res/bonucci.jpg</span>
+                        <p>FENERBAHÇE SPOR KULÜBÜ 36 YAŞINDAKİ İTALYAN DEVİ BONUCCİ İLE ANLAŞMAYA VARMIŞTIR.</p>
+                        <a href="#" class="image"><img src="res/bonucci.jpg" alt= /></a>
+                    </li>
+                    <li>
+                        <h3>İLK 11 OYNAYAMADI</h3>
+                        <span>res/crespo.jpg</span>
+                        <p>KONYA MAÇI ÖNCESİ ISINAN MİGUEL CRESPO ISINMA SIRASINDA ARKA ADALESİNDE AĞRI HİSSETTİĞİ İÇİN YERİNİ İSMAİL YÜKSEK E DEVRETMİŞTİ</p>
+                        <img src="res/crespo.jpg" class="image">
+                    </li>
+                    <li>
+                        <h3>7-1</h3>
+                        <span>res/konya.jpg</span>
+                        <p>KONYAYI İLK YARI ADETA KIMILDATMAYAN SARI LACİVERTLİLER DZEKONUN HATRİCKLERİYE SZYMANSKİ,MERT,CENGİZ VE BATSHUAYİNİN GOLLERİYLE MAÇI FARKLA KAZANMIŞTIR</p>
+                        <a href="#" class="image"><img src="res/konya.jpg" alt= /></a>
+                    </li>
+                   
+                    </li>
+                </ul>
+                <div id="wrapper">
+                    <div id="fullsize">
+                        <div id="imgprev" class="imgnav" title="Previous Image"></div>
+                        <div id="imglink"></div>
+                        <div id="imgnext" class="imgnav" title="Next Image"></div>
+                        <div id="image"></div>
+                        <div id="information">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="thumbnails">
+                        <div id="slideleft" title="Slide Left"></div>
+                        <div id="slidearea">
+                            <div id="slider"></div>
+                        </div>
+                        <div id="slideright" title="Slide Right"></div>
+                    </div>
+                </div>
+            <script type="text/javascript" src="compressed.js"></script>
+            <script type="text/javascript">
+                $('slideshow').style.display='none';
+                $('wrapper').style.display='block';
+                var slideshow=new TINY.slideshow("slideshow");
+                window.onload=function(){
+                    slideshow.auto=true;
+                    slideshow.speed=5;
+                    slideshow.link="linkhover";
+                    slideshow.info="information";
+                    slideshow.thumbs="slider";
+                    slideshow.left="slideleft";
+                    slideshow.right="slideright";
+                    slideshow.scrollSpeed=4;
+                    slideshow.spacing=5;
+                    slideshow.active="#fff";
+                    slideshow.init("slideshow","image","imgprev","imgnext","imglink");
+                }
+            </script>
+            </article>
+            <footer>
+           <p> Tüm Hakları Saklıdır©</p>
+            <p> İletişim İÇİN
+             E-mail: <a href="mailto:usluhamza626@gmail.com">usluhamza626@gmail.com</a> </p>
+            </footer>
+        </div>    
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 20px 50px 150px;
+    font-size: 13px;
+    text-align: center;
+    background: darkblue;
+    background: -webkit-linear-gradient(to left, rgb(14, 14, 112) , #EDDE5D);
+    background: linear-gradient(to left, darkblue , #EDDE5D);
+  }
+ 
+  
+  ul {
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  ul li {
+    font: bold 12px/18px sans-serif;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+  }
+  ul li:hover {
+    background: #555;
+    color: #fff;
+  }
+  ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 15%;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+  }
+  ul li ul li { 
+    background: #555; 
+    display: block; 
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+  }
+  ul li ul li:hover { background: #666; }
+  ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  ul li a{
+    text-decoration: none;
+    color: rgb(37, 37, 110);
+  }
+  .ortak{
+    color: rgb(143, 143, 11);
+    display: block;
+    height: 30px;
+  }
+  header{
+    width: 40%;
+    height: 200px;
+    margin: auto;
+  }
+  #anares{
+   width: 600px;
+   height: 200px;
+  }
+  #sag{
+    float: right;
+    margin-right: 390px;
+    margin-top: 20px;
+    width: 150px;
+    height: 600px;
+    border: 2px solid blue;
+  }
+  #sol{
+    float: left;
+    margin-left: 390px;
+    margin-top: 20px;
+    width: 150px;
+    height: 600px;
+    border: 2px solid blue;
+  }
+  article{
+           border: 1px solid yellow;
+           margin: auto;
+           width: 37%;
+           height: 600px;
+           margin-top: 30px;
+  }
+  nav{
+    width: 50%;
+    height: 25%;
+    margin: auto;
+  }
+  footer{
+    border:1px solid brown;
+		width:910px;
+		height:80px;
+    margin-left: 460px;
+    font-size: 18px;
+    color: white;
+    margin: auto;
+    margin-top: 5px;
+  }
+  article ul li img{
+    width: 300px;
+    height: 400px;
+  }
+  #sol img{
+    width: 150px;
+    height: 600px;
+  }
+  #sag img{
+    width: 150px;
+    height: 600px;
+  }
+  #sagkurulus{
+    float: right;
+    margin-right: 390px;
+    margin-top: 20px;
+    width: 150px;
+    height: 600px;
+  }
+  #solkurulus{
+    float: left;
+    margin-left: 390px;
+    margin-top: 20px;
+    width: 150px;
+    height: 600px;
+  }
+  #sagkurulus img{
+    width: 150px;
+    height: 600px;
+  }
+  #solkurulus img{
+    width: 150px;
+    height: 600px;
+  }
+  span{
+    width: 300px;
+    height: 400px;
+  }
